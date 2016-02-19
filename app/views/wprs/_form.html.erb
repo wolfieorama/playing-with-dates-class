@@ -1,0 +1,29 @@
+<%= form_for(@wpr) do |f| %>
+  <% if @wpr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wpr.errors.count, "error") %> prohibited this wpr from being saved:</h2>
+
+      <ul>
+      <% @wpr.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :c_score %><br>
+    <%= f.number_field :c_score %>
+  </div>
+  <div class="field">
+    <%= f.label :a_score %><br>
+    <%= f.number_field :a_score %>
+  </div>
+  <div class="field">
+    <%= f.label :n_score %><br>
+    <%= f.number_field :n_score %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

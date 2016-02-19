@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  c_score: 1
+  a_score: 1
+  n_score: 1
+
+two:
+  c_score: 1
+  a_score: 1
+  n_score: 1

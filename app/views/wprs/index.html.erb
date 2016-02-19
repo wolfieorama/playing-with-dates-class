@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Wprs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>C score</th>
+      <th>A score</th>
+      <th>N score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wprs.each do |wpr| %>
+      <tr>
+        <td><%= wpr.c_score %></td>
+        <td><%= wpr.a_score %></td>
+        <td><%= wpr.n_score %></td>
+        <td><%= link_to 'Show', wpr %></td>
+        <td><%= link_to 'Edit', edit_wpr_path(wpr) %></td>
+        <td><%= link_to 'Destroy', wpr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wpr', new_wpr_path %>

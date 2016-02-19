@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>C score:</strong>
+  <%= @wpr.c_score %>
+</p>
+
+<p>
+  <strong>A score:</strong>
+  <%= @wpr.a_score %>
+</p>
+
+<p>
+  <strong>N score:</strong>
+  <%= @wpr.n_score %>
+</p>
+
+<%= link_to 'Edit', edit_wpr_path(@wpr) %> |
+<%= link_to 'Back', wprs_path %>
