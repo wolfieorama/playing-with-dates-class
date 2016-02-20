@@ -4,4 +4,5 @@ class Week < ActiveRecord::Base
   def week
     Time.now.strftime("%U").to_i
   end
+
 end
