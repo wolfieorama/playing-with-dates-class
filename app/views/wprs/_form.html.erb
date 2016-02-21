@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :Week %><br>
+    <%= f.collection_select(:week_id, Week.all, :id, :week) %>
+  </div>
+  <div class="field">
     <%= f.label :c_score %><br>
     <%= f.number_field :c_score %>
   </div>

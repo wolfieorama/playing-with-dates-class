@@ -69,6 +69,6 @@ class WprsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wpr_params
-      params.require(:wpr).permit(:c_score, :a_score, :n_score)
+      params.require(:wpr).permit(:c_score, :a_score, :n_score, :week_id)
     end
 end
