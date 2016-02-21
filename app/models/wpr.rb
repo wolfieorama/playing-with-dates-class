@@ -1,10 +1,7 @@
 class Wpr < ActiveRecord::Base
-
   belongs_to :week
-  scope :prev_week, -> { where('week < ?', this_week) }
 
-  def this_week
-    Time.now.strftime('%V')
+  def last_score
+    a = self.week.week.pred
   end
-
 end
